@@ -3,7 +3,7 @@
 
 var quizQuestions = [
     {
-      questionId: 1, //might not need? Adding as it might be useful for random selection of questions
+      //questionId: 1, //might not need? Adding as it might be useful for random selection of questions
       questionTitle: "In 1992, the first text message sent to a phone said what?", 
       choices: [
         { text: "Merry Christmas", isCorrect: true },
@@ -13,7 +13,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 2, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 2, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "The sound of the police siren changing pitch when it moves towards and away from you is know as what?",
         choices: [
           { text: "Doppler effect", isCorrect: true },
@@ -23,7 +23,7 @@ var quizQuestions = [
       },
 
     {
-        questionId: 3, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 3, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "Who is the chef credited with the invention of potato crisps in 1853?", 
         choices: [
           { text: "CB Fry", isCorrect: false },
@@ -33,7 +33,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 4, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 4, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "A pet feline called Tardar Sauce became an internet sensation under what name?", 
         choices: [
           { text: "Chairman Miaow", isCorrect: false },
@@ -43,7 +43,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 5, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 5, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "Which Carribean country is regarded as the home of the steel band?", 
         choices: [
           { text: "Jamaica", isCorrect: false },
@@ -53,7 +53,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 6, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 6, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "How many legs does a lobster have?", 
         choices: [
           { text: "6", isCorrect: false },
@@ -63,7 +63,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 7, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 7, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "In which sport might you perform 'randolphs' and 'rudolphs'?", 
         choices: [
           { text: "Ice-skating", isCorrect: false },
@@ -73,7 +73,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 8, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 8, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "On a QWERTY keyboard, which of these consecutive letters are NOT placed side by side?", 
         choices: [
           { text: "ABC", isCorrect: true },
@@ -83,7 +83,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 9, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 9, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "In karaoke and karate, what does the Japanese word kara mean?", 
         choices: [
           { text: "Empty", isCorrect: true },
@@ -93,7 +93,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 10, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 10, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "Which US president has a middle initial that didn't stand for anything?", 
         choices: [
           { text: "Lyndon B Johnson", isCorrect: false },
@@ -103,7 +103,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 11, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 11, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "Which of these is a real medical condition?", 
         choices: [
           { text: "Geographic tongue", isCorrect: true },
@@ -113,7 +113,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 12, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 12, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "'Modern life is rubbish' was the second album by which band?", 
         choices: [
           { text: "Oasis", isCorrect: false },
@@ -123,7 +123,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 13, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 13, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "Which of these is a genuine language setting on Facebook?", 
         choices: [
           { text: "Double Dutch", isCorrect: false },
@@ -133,7 +133,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 14, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 14, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "If a french person says 'Je mange', what are they doing?", 
         choices: [
           { text: "Eating", isCorrect: true },
@@ -143,7 +143,7 @@ var quizQuestions = [
     },
     
     {
-        questionId: 15, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 15, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "How long did Apollo 11 take to travel to the Moon?", 
         choices: [
           { text: "18 hours", isCorrect: false },
@@ -153,7 +153,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 16, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 16, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "Henri Becquerel won a shared Nobel Prize for accidentally discovering what?", 
         choices: [
           { text: "X-rays", isCorrect: false },
@@ -163,7 +163,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 17, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 17, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "Which of these is a Welsh slang term for a microwave oven?", 
         choices: [
           { text: "Hotty-hoo-hoo", isCorrect: false },
@@ -173,7 +173,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 18, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 18, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "'Master of the House' and 'Bring Him Home' are songs from which musical?'", 
         choices: [
           { text: "Sweeney Todd", isCorrect: false },
@@ -183,7 +183,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 19, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 19, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "Which of these world championships, held in Finland, is the oldest?", 
         choices: [
           { text: "Air guitar", isCorrect: false },
@@ -193,7 +193,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 20, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 20, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "Which of these French foods is a soup?", 
         choices: [
           { text: "Boudin noir", isCorrect: false },
@@ -203,7 +203,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 21, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 21, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "How would you travel if you were in a 'felucca'?", 
         choices: [
           { text: "Fly in it", isCorrect: false },
@@ -213,7 +213,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 22, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 22, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "What type of computer was the first laptop computer?", 
         choices: [
           { text: "Apple Macintosh", isCorrect: false },
@@ -223,7 +223,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 23, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 23, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "In March 2013, Belgium released stamps with which flavour glue?", 
         choices: [
           { text: "Beer", isCorrect: false },
@@ -233,7 +233,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 24, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 24, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "The Clarence Hotel in Ireland is co-owned by the members of which band?", 
         choices: [
           { text: "Boyzone", isCorrect: false },
@@ -243,7 +243,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 25, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 25, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "What is the sum of numbers from one to nine?", 
         choices: [
           { text: "45", isCorrect: true },
@@ -253,7 +253,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 26, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 26, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "A 'Fat Rascal' is a type of what?",
         choices: [
           { text: "Cat", isCorrect: false },
@@ -263,7 +263,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 27, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 27, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "In 'The Sound of Music', which character is described as a 'flibbertigibbet, a will-o'-the-wisp, a clown'?", 
         choices: [
           { text: "Maria", isCorrect: true },
@@ -273,7 +273,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 28, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 28, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "On the standard London Monopoly board. which of these properties has the highest value?", 
         choices: [
           { text: "Trafalgar Square", isCorrect: false },
@@ -283,7 +283,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 29, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 29, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "Which of the Beatles is barefoot on the front cover of the album 'Abbey Road'?", 
         choices: [
           { text: "George Harrison", isCorrect: false },
@@ -293,7 +293,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 30, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 30, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "Epernay in northern France calls itself the capital of which drink?", 
         choices: [
           { text: "Calvados", isCorrect: false },
@@ -303,7 +303,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 31, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 31, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "Which of these is the name of a mountain in the US state of Washington?", 
         choices: [
           { text: "Bourbon Tom", isCorrect: false },
@@ -313,7 +313,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 32, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 32, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "The two promotories at the eastern end of the Strait of Gibraltar are called the 'Pillars of ... ' what?", 
         choices: [
           { text: "Hercules", isCorrect: true },
@@ -323,7 +323,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 33, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 33, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "The tourist attraction Wookey Hole is famous for which natural features?", 
         choices: [
           { text: "Caves", isCorrect: true },
@@ -333,7 +333,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 34, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 34, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "What name is given to the area of the USA that suffered hardship as a result of drought and windstorms in the 1930s?", 
         choices: [
           { text: "Dust bowl", isCorrect: true },
@@ -343,7 +343,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 35, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 35, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "At the annual World Biscuit Throwing Championship, which type of biscuit is used?",
         choices: [
           { text: "Digestive", isCorrect: false },
@@ -353,7 +353,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 36, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 36, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "Which of these birds is NOT mentioned in the song 'The Twelve Days of Christmas'?", 
         choices: [
           { text: "Geese", isCorrect: false },
@@ -363,7 +363,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 37, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 37, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "What type of geographical feature is a 'gulch'?", 
         choices: [
           { text: "Deep ravine", isCorrect: true },
@@ -373,7 +373,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 38, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 38, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "What is the meaning of 'Hakuna Matata'?", 
         choices: [
           { text: "No worries", isCorrect: true },
@@ -383,7 +383,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 39, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 39, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "Which instrument is nicknamed 'the clown of the orchestra'?", 
         choices: [
           { text: "Bassoon", isCorrect: true },
@@ -393,7 +393,7 @@ var quizQuestions = [
     },
 
     {
-        questionId: 40, //might not need? Adding as it might be useful for random selection of questions
+        //questionId: 40, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "Equipment for which activity is stored in a tack room?", 
         choices: [
           { text: "Rowing", isCorrect: false },

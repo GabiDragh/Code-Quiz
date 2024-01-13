@@ -13,6 +13,8 @@ var timerCount = 0;
 var selectedQuestion = "";
 var firstQuestion = "";
 var randomQuestion = "";
+var firstQuestionDisplay = "";
+var choicesList;
 
 //Add the start button event
 startButton.addEventListener("click", function() {
@@ -31,10 +33,10 @@ function startTimer () {
         if(timerCount >=0) {
             if (wrongAnswer && timerCount > 0) { //set condition if the answer is wrong and there is still time to take 10 seconds off the total time
                count--;
-            } else {
+            } //else {
                 //show next question - function to choose a random one from the array
-               nextQuestion();  
-            }
+               //nextQuestion();  
+            //}
         }
     }, 1000);
 
@@ -46,15 +48,33 @@ function startTimer () {
 
 console.log(quizQuestions);
 
-function askFirstQuestion(quizQuestions) {
+function askFirstQuestion() {
     //Pick a random question from the array
     //for (i = 0; i < questions.length; i++) {
-    var firstQuestion = Math.floor(Math.random() * quizQuestions.length);
-    //var randomQuestion = quizQuestions[firstQuestion];
-    return firstQuestion;
+    var firstQuestion = quizQuestions[Math.floor(Math.random()*quizQuestions.length)];
+    var randomQuestion = firstQuestion;
+    console.log(randomQuestion);
+    
+    var newWindow = window.open('', '_blank');
+    newWindow.document.write(`<h2>${randomQuestion.questionTitle}</h2>`);
+    var choicesList = newWindow.document.createElement('ul');
+    randomQuestion.choices.forEach(choice => {
+        var listItem = newWindow.document.createElement('li');
+        listItem.textContent = choice.text;
+        listItem.addEventListener('click', () => {
+            //code on response 
+        });
+        choices.list.appendChild(listItem);
+    });
+    //localStorage.setItem("quizQuestions", JSON.stringify(quizQuestions));
+    //var quizStore = JSON.parse(localStorage.getItem("quizquestions"));
+    //quizQuestions.textContent = quizStore;
+    //console.log(quizStore);
+ newWindow.document.body.appendChild(choicesList);
 };
 
 console.log(firstQuestion);
+
 
 //var randomFirst = askFirstQuestion(questions);
 ///console.log(randomFirst);
