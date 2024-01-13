@@ -1,7 +1,7 @@
 //Define the questions variable equals to an array of objects to reference in the logic.js file.
 //Each object to contain a question property and an choices one, where each answer contains the information whether it is correct or not
 
-var questions = [
+var quizQuestions = [
     {
       questionId: 1, //might not need? Adding as it might be useful for random selection of questions
       questionTitle: "In 1992, the first text message sent to a phone said what?", 
@@ -406,7 +406,7 @@ var questions = [
 
 //check if question numbers is unique (console.log question.Id the same?)
 
-var questionIds = questions.map(question => question.questionId);
+var questionIds = quizQuestions.map(question => question.questionId);
 var uniqueQuestionIds = new Set(questionIds);
 
 if (questionIds.length === uniqueQuestionIds.size) {
@@ -417,7 +417,7 @@ if (questionIds.length === uniqueQuestionIds.size) {
 
 //check text string duplicates
 
-var questionTitles = questions.map(question => question.questionTitle);
+var questionTitles = quizQuestions.map(question => question.questionTitle);
 var uniquequestionTitles = new Set(questionTitles);
 
 console.log(questionTitles);
@@ -440,17 +440,17 @@ if (questionTitles.length === uniquequestionTitles.size) {
 //      console.log(questions[i].length);
 //   }
 
-   for (var j = 0; j < questions[0].choices[1].length; j++) {
-      if (questions[i].choices[1][j].isCorrect === true) {
+   for (var j = 0; j < quizQuestions[0].choices[1].length; j++) {
+      if (quizQuestions[i].choices[1][j].isCorrect === true) {
           trueCount++;
       } else {
           falseCount++
       }
  
    if (trueCount === 1 && falseCount === 2) {
-      console.log("Question " + questions[i].questionId + " has one true and two false answer inputs");
+      console.log("Question " + quizQuestions[i].questionId + " has one true and two false answer inputs");
    } else {
-      console.log("Question " + questions[i].questionId + " does NOT have one true and two false answer inputs");
+      console.log("Question " + quizQuestions[i].questionId + " does NOT have one true and two false answer inputs");
    }
   }
  }
