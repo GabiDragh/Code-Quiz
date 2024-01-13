@@ -3,8 +3,8 @@
 
 var questions = [
     {
-      questionId = 1 //might not need? Adding as it might be useful for random selection of questions
-      questionText: "In 1992, the first text message sent to a phone said what?" 
+      questionId: 1, //might not need? Adding as it might be useful for random selection of questions
+      questionText: "In 1992, the first text message sent to a phone said what?", 
       answers: [
         { text: "Merry Christmas", isCorrect: true },
         { text: "Happy Birthday", isCorrect: false },
@@ -13,8 +13,8 @@ var questions = [
     },
 
     {
-        questionId = 2 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "The sound of the police siren changing pitch when it moves towards and away from you is know as what?" 
+        questionId: 2, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "The sound of the police siren changing pitch when it moves towards and away from you is know as what?",
         answers: [
           { text: "Doppler effect", isCorrect: true },
           { text: "Hertz effect", isCorrect: false },
@@ -23,8 +23,8 @@ var questions = [
       },
 
     {
-        questionId = 3 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "Who is the chef credited with the invention of potato crisps in 1853?" 
+        questionId: 3, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "Who is the chef credited with the invention of potato crisps in 1853?", 
         answers: [
           { text: "CB Fry", isCorrect: false },
           { text: "Titus Salt", isCorrect: false },
@@ -33,8 +33,8 @@ var questions = [
     },
 
     {
-        questionId = 4 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "A pet feline called Tardar Sauce became an internet sensation under what name?" 
+        questionId: 4, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "A pet feline called Tardar Sauce became an internet sensation under what name?", 
         answers: [
           { text: "Chairman Miaow", isCorrect: false },
           { text: "Grumpy Cat", isCorrect: true },
@@ -43,8 +43,8 @@ var questions = [
     },
 
     {
-        questionId = 5 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "Which Carribean country is regarded as the home of the steel band?" 
+        questionId: 5, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "Which Carribean country is regarded as the home of the steel band?", 
         answers: [
           { text: "Jamaica", isCorrect: false },
           { text: "Trindad and Tobago", isCorrect: true },
@@ -53,8 +53,8 @@ var questions = [
     },
 
     {
-        questionId = 6 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "How many legs does a lobster have?" 
+        questionId: 6, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "How many legs does a lobster have?", 
         answers: [
           { text: "6", isCorrect: false },
           { text: "8", isCorrect: false },
@@ -63,8 +63,8 @@ var questions = [
     },
 
     {
-        questionId = 7 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "In which sport might you perform 'randolphs' and 'rudolphs'?" 
+        questionId: 7, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "In which sport might you perform 'randolphs' and 'rudolphs'?", 
         answers: [
           { text: "Ice-skating", isCorrect: false },
           { text: "Ski-jumping", isCorrect: false },
@@ -73,8 +73,8 @@ var questions = [
     },
 
     {
-        questionId = 8 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "On a QWERTY keyboard, which of these consecutive letters are NOT placed side by side?" 
+        questionId: 8, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "On a QWERTY keyboard, which of these consecutive letters are NOT placed side by side?", 
         answers: [
           { text: "ABC", isCorrect: true },
           { text: "SFGH", isCorrect: false },
@@ -83,8 +83,8 @@ var questions = [
     },
 
     {
-        questionId = 9 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "In karaoke and karate, what does the Japanese word kara mean?" 
+        questionId: 9, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "In karaoke and karate, what does the Japanese word kara mean?", 
         answers: [
           { text: "Empty", isCorrect: true },
           { text: "Strong", isCorrect: false },
@@ -93,8 +93,8 @@ var questions = [
     },
 
     {
-        questionId = 10 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "Which US president has a middle initial that didn't stand for anything?" 
+        questionId: 10, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "Which US president has a middle initial that didn't stand for anything?", 
         answers: [
           { text: "Lyndon B Johnson", isCorrect: false },
           { text: "George W Bush", isCorrect: false },
@@ -103,8 +103,8 @@ var questions = [
     },
 
     {
-        questionId = 11 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "Which of these is a real medical condition?" 
+        questionId: 11, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "Which of these is a real medical condition?", 
         answers: [
           { text: "Geographic tongue", isCorrect: true },
           { text: "Historic gum", isCorrect: false },
@@ -113,8 +113,8 @@ var questions = [
     },
 
     {
-        questionId = 12 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "'Modern life is rubbish' was the second album by which band?" 
+        questionId: 12, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "'Modern life is rubbish' was the second album by which band?", 
         answers: [
           { text: "Oasis", isCorrect: false },
           { text: "Stereophonics", isCorrect: false },
@@ -123,8 +123,8 @@ var questions = [
     },
 
     {
-        questionId = 13 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "Which of these is a genuine language setting on Facebook?" 
+        questionId: 13, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "Which of these is a genuine language setting on Facebook?", 
         answers: [
           { text: "Double Dutch", isCorrect: false },
           { text: "Pirate English", isCorrect: true },
@@ -133,8 +133,8 @@ var questions = [
     },
 
     {
-        questionId = 14 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "If a french person says 'Je mange', what are they doing?" 
+        questionId: 14, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "If a french person says 'Je mange', what are they doing?", 
         answers: [
           { text: "Eating", isCorrect: true },
           { text: "Crying", isCorrect: false },
@@ -143,8 +143,8 @@ var questions = [
     },
     
     {
-        questionId = 15 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "How long did Apollo 11 take to travel to the Moon?" 
+        questionId: 15, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "How long did Apollo 11 take to travel to the Moon?", 
         answers: [
           { text: "18 hours", isCorrect: false },
           { text: "4 days", isCorrect: true },
@@ -153,8 +153,8 @@ var questions = [
     },
 
     {
-        questionId = 16 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "Henri Becquerel won a shared Nobel Prize for accidentally discovering what?" 
+        questionId: 16, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "Henri Becquerel won a shared Nobel Prize for accidentally discovering what?", 
         answers: [
           { text: "X-rays", isCorrect: false },
           { text: "Magnetism", isCorrect: false },
@@ -163,8 +163,8 @@ var questions = [
     },
 
     {
-        questionId = 17 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "Which of these is a Welsh slang term for a microwave oven?" 
+        questionId: 17, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "Which of these is a Welsh slang term for a microwave oven?", 
         answers: [
           { text: "Hotty-hoo-hoo", isCorrect: false },
           { text: "Beepy-spin", isCorrect: false },
@@ -173,8 +173,8 @@ var questions = [
     },
 
     {
-        questionId = 18 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "'Master of the House' and 'Bring Him Home' are songs from which musical?'" 
+        questionId: 18, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "'Master of the House' and 'Bring Him Home' are songs from which musical?'", 
         answers: [
           { text: "Sweeney Todd", isCorrect: false },
           { text: "Miss Saigon", isCorrect: false },
@@ -183,8 +183,8 @@ var questions = [
     },
 
     {
-        questionId = 19 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "Which of these world championships, held in Finland, is the oldest?" 
+        questionId: 19, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "Which of these world championships, held in Finland, is the oldest?", 
         answers: [
           { text: "Air guitar", isCorrect: false },
           { text: "Wife carrying", isCorrect: true },
@@ -193,8 +193,8 @@ var questions = [
     },
 
     {
-        questionId = 20 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "Which of these French foods is a soup?" 
+        questionId: 20, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "Which of these French foods is a soup?", 
         answers: [
           { text: "Boudin noir", isCorrect: false },
           { text: "Bouillon", isCorrect: true },
@@ -203,8 +203,8 @@ var questions = [
     },
 
     {
-        questionId = 21 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "How would you travel if you were in a 'felucca'?" 
+        questionId: 21, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "How would you travel if you were in a 'felucca'?", 
         answers: [
           { text: "Fly in it", isCorrect: false },
           { text: "Pedal it", isCorrect: false },
@@ -213,18 +213,18 @@ var questions = [
     },
 
     {
-        questionId = 22 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "How would you travel if you were in a 'felucca'?" 
+        questionId: 22, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "What type of computer was the first laptop computer?", 
         answers: [
-          { text: "Fly in it", isCorrect: false },
-          { text: "Pedal it", isCorrect: false },
-          { text: "Sail in it", isCorrect: true },
+          { text: "Apple Macintosh", isCorrect: false },
+          { text: "IBM", isCorrect: false },
+          { text: "Osborne 1", isCorrect: true },
         ],
     },
 
     {
-        questionId = 23 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "In March 2013, Belgium released stamps with which flavour glue?" 
+        questionId: 23, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "In March 2013, Belgium released stamps with which flavour glue?", 
         answers: [
           { text: "Beer", isCorrect: false },
           { text: "Chocolate", isCorrect: true },
@@ -233,8 +233,8 @@ var questions = [
     },
 
     {
-        questionId = 24 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "The Clarence Hotel in Ireland is co-owned by the members of which band?" 
+        questionId: 24, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "The Clarence Hotel in Ireland is co-owned by the members of which band?", 
         answers: [
           { text: "Boyzone", isCorrect: false },
           { text: "Gun'n'Roses", isCorrect: false },
@@ -243,8 +243,8 @@ var questions = [
     },
 
     {
-        questionId = 25 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "What is the sum of numbers from one to nine?" 
+        questionId: 25, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "What is the sum of numbers from one to nine?", 
         answers: [
           { text: "45", isCorrect: true },
           { text: "39", isCorrect: false },
@@ -253,8 +253,8 @@ var questions = [
     },
 
     {
-        questionId = 26 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "A 'Fat Rascal' is a type of what?" 
+        questionId: 26, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "A 'Fat Rascal' is a type of what?",
         answers: [
           { text: "Cat", isCorrect: false },
           { text: "Cactus", isCorrect: false },
@@ -263,8 +263,8 @@ var questions = [
     },
 
     {
-        questionId = 27 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "In 'The Sound of Music', which character is described as a 'flibbertigibbet, a will-o'-the-wisp, a clown'?" 
+        questionId: 27, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "In 'The Sound of Music', which character is described as a 'flibbertigibbet, a will-o'-the-wisp, a clown'?", 
         answers: [
           { text: "Maria", isCorrect: true },
           { text: "Captain Von Trapp", isCorrect: false },
@@ -273,8 +273,8 @@ var questions = [
     },
 
     {
-        questionId = 28 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "On the standard London Monopoly board. which of these properties has the highest value?" 
+        questionId: 28, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "On the standard London Monopoly board. which of these properties has the highest value?", 
         answers: [
           { text: "Trafalgar Square", isCorrect: false },
           { text: "Oxford Street", isCorrect: true },
@@ -283,8 +283,8 @@ var questions = [
     },
 
     {
-        questionId = 29 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "Which of the Beatles is barefoot on the front cover of the album 'Abbey Road'?" 
+        questionId: 29, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "Which of the Beatles is barefoot on the front cover of the album 'Abbey Road'?", 
         answers: [
           { text: "George Harrison", isCorrect: false },
           { text: "Paul McCartney", isCorrect: true },
@@ -293,8 +293,8 @@ var questions = [
     },
 
     {
-        questionId = 30 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "Epernay in northern France calls itself the capital of which drink?" 
+        questionId: 30, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "Epernay in northern France calls itself the capital of which drink?", 
         answers: [
           { text: "Calvados", isCorrect: false },
           { text: "Champagne", isCorrect: true },
@@ -303,8 +303,8 @@ var questions = [
     },
 
     {
-        questionId = 31 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "Which of these is the name of a mountain in the US state of Washington?" 
+        questionId: 31, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "Which of these is the name of a mountain in the US state of Washington?", 
         answers: [
           { text: "Bourbon Tom", isCorrect: false },
           { text: "Whiskey Dick", isCorrect: true },
@@ -313,8 +313,8 @@ var questions = [
     },
 
     {
-        questionId = 32 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "The two promotories at the eastern end of the Strait of Gibraltar are called the 'Pillars of ... ' what?" 
+        questionId: 32, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "The two promotories at the eastern end of the Strait of Gibraltar are called the 'Pillars of ... ' what?", 
         answers: [
           { text: "Hercules", isCorrect: true },
           { text: "Zeus", isCorrect: false },
@@ -323,8 +323,8 @@ var questions = [
     },
 
     {
-        questionId = 33 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "The tourist attraction Wookey Hole is famous for which natural features?" 
+        questionId: 33, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "The tourist attraction Wookey Hole is famous for which natural features?", 
         answers: [
           { text: "Caves", isCorrect: true },
           { text: "Moving stones", isCorrect: false },
@@ -333,8 +333,8 @@ var questions = [
     },
 
     {
-        questionId = 34 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "What name is given to the area of the USA that suffered hardship as a result of drought and windstorms in the 1930s?" 
+        questionId: 34, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "What name is given to the area of the USA that suffered hardship as a result of drought and windstorms in the 1930s?", 
         answers: [
           { text: "Dust bowl", isCorrect: true },
           { text: "Dirt basin", isCorrect: false },
@@ -343,8 +343,8 @@ var questions = [
     },
 
     {
-        questionId = 35 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "At the annual World Biscuit Throwing Championship, which type of biscuit is used?" 
+        questionId: 35, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "At the annual World Biscuit Throwing Championship, which type of biscuit is used?",
         answers: [
           { text: "Digestive", isCorrect: false },
           { text: "Rich Tea", isCorrect: true },
@@ -353,8 +353,8 @@ var questions = [
     },
 
     {
-        questionId = 36 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "Which of these birds is NOT mentioned in the song 'The Twelve Days of Christmas'?" 
+        questionId: 36, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "Which of these birds is NOT mentioned in the song 'The Twelve Days of Christmas'?", 
         answers: [
           { text: "Geese", isCorrect: false },
           { text: "Swans", isCorrect: false },
@@ -363,8 +363,8 @@ var questions = [
     },
 
     {
-        questionId = 37 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "What type of geographical feature is a 'gulch'?" 
+        questionId: 37, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "What type of geographical feature is a 'gulch'?", 
         answers: [
           { text: "Deep ravine", isCorrect: true },
           { text: "Hill of a baked mud", isCorrect: false },
@@ -373,18 +373,18 @@ var questions = [
     },
 
     {
-        questionId = 38 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "What type of geographical feature is a 'gulch'?" 
+        questionId: 38, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "What is the meaning of 'Hakuna Matata'?", 
         answers: [
-          { text: "Deep ravine", isCorrect: true },
-          { text: "Hill of a baked mud", isCorrect: false },
-          { text: "Stagnant pond", isCorrect: false },
+          { text: "No worries", isCorrect: true },
+          { text: "Good night", isCorrect: false },
+          { text: "Thank you", isCorrect: false },
         ],
     },
 
     {
-        questionId = 39 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "Which instrument is nicknamed 'the clown of the orchestra'?" 
+        questionId: 39, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "Which instrument is nicknamed 'the clown of the orchestra'?", 
         answers: [
           { text: "Bassoon", isCorrect: true },
           { text: "Tuba", isCorrect: false },
@@ -393,17 +393,89 @@ var questions = [
     },
 
     {
-        questionId = 40 //might not need? Adding as it might be useful for random selection of questions
-        questionText: "Equipment for which activity is stored in a tack room?" 
+        questionId: 40, //might not need? Adding as it might be useful for random selection of questions
+        questionText: "Equipment for which activity is stored in a tack room?", 
         answers: [
           { text: "Rowing", isCorrect: false },
           { text: "Photography", isCorrect: false },
-          { text: "riding", isCorrect: true },
+          { text: "Riding", isCorrect: true },
         ],
     },
 ]
 
 
 //check if question numbers is unique (console.log question.Id the same?)
+
+var questionIds = questions.map(question => question.questionId);
+var uniqueQuestionIds = new Set(questionIds);
+
+if (questionIds.length === uniqueQuestionIds.size) {
+  console.log("All questionIds are unique.");
+} else {
+  console.log("There are duplicate questionIds.");
+}
+
 //check text string duplicates
-//check if each question has one true and 2 false answers
+
+var questionTexts = questions.map(question => question.questionText);
+var uniqueQuestionTexts = new Set(questionTexts);
+
+console.log(questionTexts);
+console.log(uniqueQuestionTexts);
+
+if (questionTexts.length === uniqueQuestionTexts.size) {
+  console.log("All question texts are unique.");
+} else {
+  console.log("There are duplicate question texts.");
+}
+
+//TODO:check if each question has one true and 2 false answers
+
+ var trueCount = 0;
+ var falseCount = 0; 
+
+  function checkTrueFalse () {
+
+//   for (var i = 0; i < questions.lenght; i++) {
+//      console.log(questions[i].length);
+//   }
+
+   for (var j = 0; j < questions[0].answers[1].length; j++) {
+      if (questions[i].answers[1][j].isCorrect === true) {
+          trueCount++;
+      } else {
+          falseCount++
+      }
+ 
+   if (trueCount === 1 && falseCount === 2) {
+      console.log("Question " + questions[i].questionId + " has one true and two false answer inputs");
+   } else {
+      console.log("Question " + questions[i].questionId + " does NOT have one true and two false answer inputs");
+   }
+  }
+ }
+checkTrueFalse();
+
+//  var trueCount = true;
+//  var falseCount = true;
+
+//  function checkAnswers(questions) {
+//      for (var i = 0; i < questions.length; i++) {
+//          var questionLength = questions[i];
+//     for (var j = 0; j < questionLength.answers[1].lenght; j++) {
+//         var trueCount = questionLength.answers[1][j].filter(answers => true.isCorrect).length;
+//         var falseCount = questionLength.answers[1][j].filter(answers => false.isCorrect).length;
+//     }
+// //console.log(trueCount);
+// //console.log(falseCount);
+
+//      if (trueCount === 1 && falseCount === 2) {
+//          console.log(true);
+//      } else {
+//          console.log(false);
+//      }
+//      }
+//  }
+
+// checkAnswers(questions);
+
