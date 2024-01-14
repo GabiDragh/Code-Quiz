@@ -20,23 +20,26 @@ startScreen.appendChild(image);
 //Style page
 body.setAttribute("style", "font-family: emoji");
 startButton.setAttribute("style", "background-color: navy; color: orange; size: 110%");
+questionTitleElement.setAttribute("style", "text-align: center");
 
 
+var isWin = false;
 var wrongAnswer = false;
 var timerInterval;
 var timerCount = 0;
 var selectedQuestion = "";
-var firstQuestion = "";
+var randomQuestion = "";
 var randomQuestion = "";
 var firstQuestionDisplay = "";
 var choicesList;
 
 //Add the start button event
-startButton.addEventListener("click", function() {
+function startGame() {
+isWin = false;
 //Declare functions to run when button is pressed
 startTimer(); 
-askFirstQuestion(questions); 
-});
+askFirstQuestion(); 
+};
 
 //Define startTimer funtion
 function startTimer () {
@@ -55,44 +58,31 @@ function startTimer () {
 }
 console.log(quizQuestions);
 
-function askFirstQuestion(questions) {
+function askFirstQuestion() {
     //Pick a random question from the array
-    var firstQuestion = quizQuestions[Math.floor(Math.random()*quizQuestions.length)];
-    console.log(firstQuestion);
+    var randomQuestion = quizQuestions[Math.floor(Math.random()*quizQuestions.length)];
+    console.log(randomQuestion);
     //Assign question title to the HTML object
-    questionTitleElement.textContent = firstQuestion.questionTitle;
+    questionTitleElement.innerHTML = "";
+    questionTitleElement.textContent = randomQuestion.questionTitle;
     console.log(questionTitleElement);
+    //Replace start screen div with question div
+    startScreen.style.display = "none";
+    questionsElement.style.display = "block";
 
+    //Create ordered list for the answers
+    //Create clickable buttons 
+    //if answers right->next question
+    //If answer wrong->display wrong and take 5 seconds off timer
+    //Display ordered list
 
-    
-    //var newWindow = window.open('', '_blank');
-    //newWindow.document.write(`<h2>${randomQuestion.questionTitle}</h2>`);
-    // var choicesList = newWindow.document.createElement('ul');
-    // randomQuestion.choices.forEach(choice => {
-    //     var listItem = newWindow.document.createElement('li');
-    //     listItem.textContent = choice.text;
-    //     listItem.addEventListener('click', () => {
-    //         //code on response 
-    //     });
-    //     choices.list.appendChild(listItem);
-    // });
-    //localStorage.setItem("quizQuestions", JSON.stringify(quizQuestions));
-    //var quizStore = JSON.parse(localStorage.getItem("quizquestions"));
-    //quizQuestions.textContent = quizStore;
-    //console.log(quizStore);
- //newWindow.document.body.appendChild(choicesList);
 };
 
-console.log(firstQuestion);
-
-
-//var randomFirst = askFirstQuestion(questions);
-///console.log(randomFirst);
 
 //function nextQuestion() {
 
 //}
-
+startButton.addEventListener("click", startGame);
 //When I click the start button (ADD EVENT LISTENER -CLICK), I want the timer to start (SET TIMER FUNCTION) and the first question to appear (PROMPT/DISPLAY????)
 //Each question has a clickable button (ADD EVENT LISTENER-CLICK ON VARIABLE PROPERTY)
 //When the answer in selected, next question appears (BONUS: select a random question once pressed next question?)
