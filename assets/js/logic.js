@@ -30,25 +30,31 @@ var choicesList = document.createElement("ol");
 
 //Create ordered list items
 
-var li1 = document.createElement("li");
-var li2 = document.createElement("li");
-var li3 = document.createElement("li");
+// var li1 = document.createElement("li");
+// var li2 = document.createElement("li");
+// var li3 = document.createElement("li");
+
+//Create buttons
+
+var button1 = document.createElement("button");
+var button2 = document.createElement("button");
+var button3 = document.createElement("button");
 
 //Add text for list items
 
-li1.textContent = "";
-li2.textcontent = "";
-li3.textcontent = "";
+button1.textContent = "Button1 answer";
+button2.textcontent = "Button2 answer";
+button3.textcontent = "Button3 answer";
 
-//Add event listeners to the list items
+//Add event listeners to the list items -- TODO:should they be buttons to keep the css styling????
 
-li1.addEventListener ("click", function () {
+button1.addEventListener ("click", function () {
     console.log("Item 1 is clicked")
 })
-li2.addEventListener ("click", function () {
+button2.addEventListener ("click", function () {
     console.log("Item 2 is clicked")
 })
-li3.addEventListener ("click", function () {
+button3.addEventListener ("click", function () {
     console.log("Item 3 is clicked")
 })
 
@@ -58,10 +64,15 @@ choicesElement.appendChild(choicesList);
 
 //Append items to the ordered list
 
-choicesList.appendChild(li1);
-choicesList.appendChild(li2);
-choicesList.appendChild(li3);
+choicesList.appendChild(button1);
+choicesList.appendChild(button2);
+choicesList.appendChild(button3);
 
+//Append button to the list item
+
+// li1.appendChild(button1);
+// li2.appendChild(button2);
+// li3.appendChild(button3);
 
 var isWin = false;
 var wrongAnswer = false;
@@ -70,6 +81,7 @@ var timerCount = 0;
 var selectedQuestion = "";
 var randomQuestion = "";
 var choicesList;
+var answer = "";
 
 //1. When I click the start button (ADD EVENT LISTENER -CLICK), I want the timer to start (SET TIMER FUNCTION) and the first question to appear (PROMPT/DISPLAY????)
 
@@ -81,11 +93,11 @@ startTimer();
 askFirstQuestion(); 
 };
 
-//Define startTimer funtion
+//Define startTimer function
 function startTimer () {
     timerCount = 90; //Set the timer
     
-    timerInterval = setInterval(function(){
+    timerInterval = setInterval(function() {
         timerCount--; //set counter to decrease
         timerElement.textContent = "Time: " + timerCount;
         if(timerCount <= 0) { //condition for when the timer gets to 0
@@ -97,6 +109,8 @@ function startTimer () {
     }, 1000);     
 }
 console.log(quizQuestions);
+
+//Define askFirstQuestion function 
 
 function askFirstQuestion() {
     //Pick a random question from the array
@@ -112,12 +126,12 @@ function askFirstQuestion() {
     
     //Show answers ordered list items
 
-    li1.innerHTML = "";
+    //li1.innerHTML = "";
     //for ( var i = 0; i < quizQuestions[1].length; i++) {
     //     var answer = li1.textContent 
     //     answer = questionQuestions[1][i];
     //     console.log(answer);
-    //     answer.style.display = "block";
+     //    answer.style.display = "block";
     // }
     
    
@@ -128,9 +142,6 @@ function askFirstQuestion() {
     //if answers right->next question
 
     //If answer wrong->display wrong and take 5 seconds off timer
-
-    
-
 };
 
 //for (var obj of quizQuestions) {
@@ -146,7 +157,7 @@ startButton.addEventListener("click", startGame);
 
 //Each question has a clickable button (ADD EVENT LISTENER-CLICK ON VARIABLE PROPERTY)
 //When the answer in selected, next question appears (BONUS: select a random question once pressed next question?)
-//In case of an incorrect answer, one second gets subtracted from the remaining time
+//In case of an incorrect answer, 5 seconds get subtracted from the remaining time
 //Quiz ends when it runs out of questions or the time finishes
 //When the game is finished, the user sees the score and has the option to save his initals and the score (highscores.html file - store highscores highest to lowest + use localstorage set in index and get in highscores)
 
