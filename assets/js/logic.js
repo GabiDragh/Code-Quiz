@@ -1,14 +1,29 @@
 //console.log(questions);
-
+var body = document.querySelector("body");
+var h1 = document.querySelector("h1");
+var startScreen = document.querySelector("#start-screen");
 var startButton = document.querySelector("#start");
 var timerElement = document.querySelector(".timer");
-var questions = document.querySelector("#questions");
-var questionTitle = document.querySelector("#question-title");
-var choices = document.querySelector("#choices");
+var questionsElement = document.querySelector("#questions");
+var questionTitleElement = document.querySelector("#question-title");
+var choicesElement = document.querySelector("#choices");
+
+//Insert pub quiz image under start button, inside the start-screen div
+//Create image element within the start-screen div
+var image = document.createElement("img");
+//Set content and style
+image.setAttribute("src", "./assets/img/19697.jpg");
+image.setAttribute("style", "position: relative; width: 500px; padding: 10px; margin-left: 15px;");
+//Append the image tag to the page
+startScreen.appendChild(image);
+
+//Style page
+body.setAttribute("style", "font-family: emoji");
+startButton.setAttribute("style", "background-color: navy; color: orange; size: 110%");
 
 
 var wrongAnswer = false;
-var timer;
+var timerInterval;
 var timerCount = 0;
 var selectedQuestion = "";
 var firstQuestion = "";
@@ -18,59 +33,54 @@ var choicesList;
 
 //Add the start button event
 startButton.addEventListener("click", function() {
-timerCount = 120;
-//var firstQuestion = quizQuestions.questionTitle[Math.floor(Math.random()*quizQuestions.questionTitle.length)];
 //Declare functions to run when button is pressed
 startTimer(); 
-askFirstQuestion(); 
+askFirstQuestion(questions); 
 });
 
+//Define startTimer funtion
 function startTimer () {
-    //Set the timer
-    timer = setInterval(function(){
+    timerCount = 90; //Set the timer
+    
+    timerInterval = setInterval(function(){
         timerCount--; //set counter to decrease
-        timerElement.textContent = timerCount;
-        if(timerCount >=0) {
-            if (wrongAnswer && timerCount > 0) { //set condition if the answer is wrong and there is still time to take 10 seconds off the total time
-               count--;
-            } //else {
-                //show next question - function to choose a random one from the array
-               //nextQuestion();  
-            //}
+        timerElement.textContent = "Time: " + timerCount;
+        if(timerCount <= 0) { //condition for when the timer gets to 0
+            clearInterval(timerInterval);
+            showScore(); //TODO:define function for showing scores when time finishes
         }
-    }, 1000);
-
-    // if (timerCount === 0) { //insert condition for when the timer gets to 0
-    //     clearInterval(timer);
-    //     showScore();
-    // }
-};
-
+        //TODO:if (wrongAnswer && timerCount > 0) { //set condition if the answer is wrong and there is still time to take 10 seconds off the total time
+                
+    }, 1000);     
+}
 console.log(quizQuestions);
 
-function askFirstQuestion() {
+function askFirstQuestion(questions) {
     //Pick a random question from the array
-    //for (i = 0; i < questions.length; i++) {
     var firstQuestion = quizQuestions[Math.floor(Math.random()*quizQuestions.length)];
-    var randomQuestion = firstQuestion;
-    console.log(randomQuestion);
+    console.log(firstQuestion);
+    //Assign question title to the HTML object
+    questionTitleElement.textContent = firstQuestion.questionTitle;
+    console.log(questionTitleElement);
+
+
     
-    var newWindow = window.open('', '_blank');
-    newWindow.document.write(`<h2>${randomQuestion.questionTitle}</h2>`);
-    var choicesList = newWindow.document.createElement('ul');
-    randomQuestion.choices.forEach(choice => {
-        var listItem = newWindow.document.createElement('li');
-        listItem.textContent = choice.text;
-        listItem.addEventListener('click', () => {
-            //code on response 
-        });
-        choices.list.appendChild(listItem);
-    });
+    //var newWindow = window.open('', '_blank');
+    //newWindow.document.write(`<h2>${randomQuestion.questionTitle}</h2>`);
+    // var choicesList = newWindow.document.createElement('ul');
+    // randomQuestion.choices.forEach(choice => {
+    //     var listItem = newWindow.document.createElement('li');
+    //     listItem.textContent = choice.text;
+    //     listItem.addEventListener('click', () => {
+    //         //code on response 
+    //     });
+    //     choices.list.appendChild(listItem);
+    // });
     //localStorage.setItem("quizQuestions", JSON.stringify(quizQuestions));
     //var quizStore = JSON.parse(localStorage.getItem("quizquestions"));
     //quizQuestions.textContent = quizStore;
     //console.log(quizStore);
- newWindow.document.body.appendChild(choicesList);
+ //newWindow.document.body.appendChild(choicesList);
 };
 
 console.log(firstQuestion);
