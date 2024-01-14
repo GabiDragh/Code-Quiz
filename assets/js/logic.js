@@ -36,27 +36,27 @@ var choicesList = document.createElement("ol");
 
 //Create buttons
 
-var button1 = document.createElement("button");
-var button2 = document.createElement("button");
-var button3 = document.createElement("button");
+// var button1 = document.createElement("button");
+// var button2 = document.createElement("button");
+// var button3 = document.createElement("button");
 
 //Add text for list items
 
-button1.textContent = "Button1 answer";
-button2.textcontent = "Button2 answer";
-button3.textcontent = "Button3 answer";
+// button1.textContent = "Button1 answer";
+// button2.textcontent = "Button2 answer";
+// button3.textcontent = "Button3 answer";
 
 //Add event listeners to the list items -- TODO:should they be buttons to keep the css styling????
 
-button1.addEventListener ("click", function () {
-    console.log("Item 1 is clicked")
-})
-button2.addEventListener ("click", function () {
-    console.log("Item 2 is clicked")
-})
-button3.addEventListener ("click", function () {
-    console.log("Item 3 is clicked")
-})
+// button1.addEventListener ("click", function () {
+//     console.log("Item 1 is clicked")
+// })
+// button2.addEventListener ("click", function () {
+//     console.log("Item 2 is clicked")
+// })
+// button3.addEventListener ("click", function () {
+//     console.log("Item 3 is clicked")
+// })
 
 //Append ordered list
 
@@ -64,9 +64,10 @@ choicesElement.appendChild(choicesList);
 
 //Append items to the ordered list
 
-choicesList.appendChild(button1);
-choicesList.appendChild(button2);
-choicesList.appendChild(button3);
+// choicesList.appendChild(button1);
+// choicesList.appendChild(button2);
+// choicesList.appendChild(button3);
+
 
 //Append button to the list item
 
@@ -113,6 +114,7 @@ console.log(quizQuestions);
 //Define askFirstQuestion function 
 
 function askFirstQuestion() {
+    choicesList.textContent = "";
     //Pick a random question from the array
     var randomQuestion = quizQuestions[Math.floor(Math.random()*quizQuestions.length)];
     console.log(randomQuestion);
@@ -126,23 +128,45 @@ function askFirstQuestion() {
     
     //Show answers ordered list items
 
-    //li1.innerHTML = "";
-    //for ( var i = 0; i < quizQuestions[1].length; i++) {
-    //     var answer = li1.textContent 
-    //     answer = questionQuestions[1][i];
-    //     console.log(answer);
-     //    answer.style.display = "block";
-    // }
+    for ( var i = 0; i < randomQuestion.answers.length; i++) {
+        console.log("this is in my for loop", randomQuestion.answers[i].text);
+         //Create clickable buttons 
+        var buttonEl = document.createElement("button");
+        buttonEl.textContent = randomQuestion.answers[i].text;
+        buttonEl.onclick = function(event) {
+            nextQuestion(event);
+        }
+        buttonEl.setAttribute("data-isCorrect", randomQuestion.answers[i].isCorrect);
+        choicesList.appendChild(buttonEl);
+    }
     
-   
     //Display ordered list
     choicesList.style.display = "block";
-    //Create clickable buttons 
-    
-    //if answers right->next question
-
-    //If answer wrong->display wrong and take 5 seconds off timer
+   
+   
 };
+
+function nextQuestion(event) {
+    console.log(event.target);
+    console.log(event.target.getAttribute("data-isCorrect"));
+    var userChoice = event.target.getAttribute("data-isCorrect");
+
+    if (userChoice == "true") {  //if answers right->next question
+       console.log("Hello");
+       askFirstQuestion();
+    } else {
+        timerCount-=5;  //If answer wrong->display wrong and take 5 seconds off timer
+        var messageElement = document.createElement("p");
+        // messageElement.textContent = "Ooops! That was wrong. You are 5 seconds and 1 points lighter.";
+        // choicesList.appendChild(messageElement);
+        // console.log(messageElement);
+        // messageElement.style.display = "block";
+        alert("Wrong answer");
+        askFirstQuestion();
+    }
+    
+}
+
 
 //for (var obj of quizQuestions) {
     //console.log(obj.answers);
