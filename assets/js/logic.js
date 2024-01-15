@@ -94,7 +94,10 @@ var subtractPoints = 0;
 //var scoreStore;
 //var initialsStore = "";
 
-
+function displayMessage(type, message) { //code from class
+    feedback.textContent = message;
+    feedback.setAttribute("class", type);
+}
 //1. When I click the start button (ADD EVENT LISTENER -CLICK), I want the timer to start (SET TIMER FUNCTION) and the first question to appear (PROMPT/DISPLAY????)
 
 //Add the start button event
@@ -160,20 +163,22 @@ function nextQuestion(event) {
     console.log(event.target.getAttribute("data-isCorrect"));
     var userChoice = event.target.getAttribute("data-isCorrect");
 
-    if (userChoice == "true") {  //if answers right->next question
+    if (userChoice == "true") {  //if answers right -> next question
        var correctAudio = new Audio('./assets/sfx/correct.wav')
        correctAudio.play();
        console.log("Hello");
        addPoints+=3;
        console.log(addPoints);
+       displayMessage("success", "Correct!");
        askFirstQuestion();
-    } else {
-        timerCount-=5;  //If answer wrong->display wrong and take 5 seconds off timer
+    } else { //If answer wrong- > takes 5 seconds off timer, plays the incorrect sound, displays wrong feedback before moving to the next question
+        timerCount-=5;  
         var incorrectAudio = new Audio('./assets/sfx/incorrect.wav')
         incorrectAudio.play();
+        console.log("Whoa!");
         subtractPoints-=1;
         console.log(subtractPoints);
-        alert("Wrong answer");
+        displayMessage("error", "Wrong answer");
         askFirstQuestion();
     }
     
@@ -182,16 +187,13 @@ function nextQuestion(event) {
 function showScore() {
     questionsElement.style.display = "none";
     endScreen.style.display = "block";
-    var showScore = addPoints + subtractPoints;
-    console.log(showScore);
-    finalScore.textContent = showScore;
-    localStorage.setItem("finalScore", showScore);
+    var displayScore = addPoints + subtractPoints;
+    console.log(displayScore);
+    finalScore.textContent = displayScore;
+    localStorage.setItem("finalScore", displayScore);
 }
 
-function displayMessage(type, message) {
-    feedback.textContent = message;
-    feedback.setAttribute("class", type);
-}
+
 
 function initialsSubmit () {
 
@@ -199,10 +201,13 @@ function initialsSubmit () {
     console.log(initialsStore);
 
      if (initialsStore.length > 3) {
-        displayMessage("error", "3 characters max");
+        displayMessage("error", "Whoa there! Keep it short - 3 characters MAX.");
+     } else if (initialsStore.length <= 0) {
+        displayMessage("error", "Be proud of your score, let us know who you are!");
      } else {
-        displayMessage("succes", "User score stored in highscores.");
+        displayMessage("success", "Yay! You are on the champs board!");
      }
+
     localStorage.setItem("initials", JSON.stringify(initialsStore));
 }
 
