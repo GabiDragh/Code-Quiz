@@ -152,16 +152,20 @@ function nextQuestion(event) {
     var userChoice = event.target.getAttribute("data-isCorrect");
 
     if (userChoice == "true") {  //if answers right->next question
+       var correctAudio = new Audio('./assets/sfx/correct.wav')
+       correctAudio.play();
        console.log("Hello");
        askFirstQuestion();
     } else {
         timerCount-=5;  //If answer wrong->display wrong and take 5 seconds off timer
-        var messageElement = document.createElement("p");
+        var incorrectAudio = new Audio('./assets/sfx/incorrect.wav')
+        incorrectAudio.play();
+        //var messageElement = document.createElement("p");
         // messageElement.textContent = "Ooops! That was wrong. You are 5 seconds and 1 points lighter.";
         // choicesList.appendChild(messageElement);
         // console.log(messageElement);
         // messageElement.style.display = "block";
-        alert("Wrong answer");
+        //alert("Wrong answer");
         askFirstQuestion();
     }
     
