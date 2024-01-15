@@ -1,13 +1,15 @@
 
 var body = document.querySelector("body");
 var h1 = document.querySelector("h1");
+var wrapper = document.querySelector(".wrapper");
 var startScreen = document.querySelector("#start-screen");
 var startButton = document.querySelector("#start");
 var timerElement = document.querySelector(".timer");
 var questionsElement = document.querySelector("#questions");
 var questionTitleElement = document.querySelector("#question-title");
 var choicesElement = document.querySelector("#choices");
-var wrapper = document.querySelector(".wrapper");
+var endScreen = document.querySelector("#end-screen");
+
 
 //Insert pub quiz image under start button, inside the start-screen div
 
@@ -105,7 +107,6 @@ function startTimer () {
             clearInterval(timerInterval);
             showScore(); //TODO:define function for showing scores when time finishes
         }
-        //TODO:if (wrongAnswer && timerCount > 0) { //set condition if the answer is wrong and there is still time to take 10 seconds off the total time
                 
     }, 1000);     
 }
@@ -126,24 +127,23 @@ function askFirstQuestion() {
     startScreen.style.display = "none";
     questionsElement.style.display = "block";
     
-    //Show answers ordered list items
+    //Create clickable buttons and show answers as ordered list items
 
     for ( var i = 0; i < randomQuestion.answers.length; i++) {
         console.log("this is in my for loop", randomQuestion.answers[i].text);
-         //Create clickable buttons 
+         //Create buttons and set them to trigger next question event
         var buttonEl = document.createElement("button");
         buttonEl.textContent = randomQuestion.answers[i].text;
         buttonEl.onclick = function(event) {
             nextQuestion(event);
         }
         buttonEl.setAttribute("data-isCorrect", randomQuestion.answers[i].isCorrect);
+        buttonEl.setAttribute("style", "display: flex");
         choicesList.appendChild(buttonEl);
     }
+     //Display ordered list
+    choicesList.style.display = "block"; 
     
-    //Display ordered list
-    choicesList.style.display = "block";
-   
-   
 };
 
 function nextQuestion(event) {
@@ -160,27 +160,20 @@ function nextQuestion(event) {
         timerCount-=5;  //If answer wrong->display wrong and take 5 seconds off timer
         var incorrectAudio = new Audio('./assets/sfx/incorrect.wav')
         incorrectAudio.play();
-        //var messageElement = document.createElement("p");
-        // messageElement.textContent = "Ooops! That was wrong. You are 5 seconds and 1 points lighter.";
-        // choicesList.appendChild(messageElement);
-        // console.log(messageElement);
-        // messageElement.style.display = "block";
-        //alert("Wrong answer");
+        alert("Wrong answer");
         askFirstQuestion();
     }
     
 }
 
+function showScore() {
+    questionsElement.style.display = "none";
+    endScreen.style.display = "block";
+    //var scoreShow = ;
+    //console.log(scoreShow);
+}
 
-//for (var obj of quizQuestions) {
-    //console.log(obj.answers);
-//}
 
-//var propArr = quizQuestions.map(obj => obj.answers);
-//console.log(propArr);
-//function nextQuestion() {
-
-//}
 startButton.addEventListener("click", startGame);
 
 //Each question has a clickable button (ADD EVENT LISTENER-CLICK ON VARIABLE PROPERTY)
