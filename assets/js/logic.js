@@ -10,6 +10,9 @@ var questionTitleElement = document.querySelector("#question-title");
 var choicesElement = document.querySelector("#choices");
 var endScreen = document.querySelector("#end-screen");
 var finalScore = document.querySelector("#final-score");
+var initials = document.querySelector("#initials");
+var submitButton = document.querySelector("#submit");
+var feedback = document.querySelector("#feedback");
 
 
 //Insert pub quiz image under start button, inside the start-screen div
@@ -88,6 +91,9 @@ var choicesList;
 var answer = "";
 var addPoints = 0;
 var subtractPoints = 0;
+//var scoreStore;
+//var initialsStore = "";
+
 
 //1. When I click the start button (ADD EVENT LISTENER -CLICK), I want the timer to start (SET TIMER FUNCTION) and the first question to appear (PROMPT/DISPLAY????)
 
@@ -101,7 +107,7 @@ askFirstQuestion();
 
 //Define startTimer function
 function startTimer () {
-    timerCount = 90; //Set the timer
+    timerCount = 10; //Set the timer
     
     timerInterval = setInterval(function() {
         timerCount--; //set counter to decrease
@@ -179,11 +185,30 @@ function showScore() {
     var showScore = addPoints + subtractPoints;
     console.log(showScore);
     finalScore.textContent = showScore;
+    localStorage.setItem("finalScore", showScore);
+}
 
+function displayMessage(type, message) {
+    feedback.textContent = message;
+    feedback.setAttribute("class", type);
+}
+
+function initialsSubmit () {
+
+    var initialsStore = initials.value;
+    console.log(initialsStore);
+
+     if (initialsStore.length > 3) {
+        displayMessage("error", "3 characters max");
+     } else {
+        displayMessage("succes", "User score stored in highscores.");
+     }
+    localStorage.setItem("initials", JSON.stringify(initialsStore));
 }
 
 
 startButton.addEventListener("click", startGame);
+submitButton.addEventListener("click", initialsSubmit);
 
 //Each question has a clickable button (ADD EVENT LISTENER-CLICK ON VARIABLE PROPERTY)
 //When the answer in selected, next question appears (BONUS: select a random question once pressed next question?)

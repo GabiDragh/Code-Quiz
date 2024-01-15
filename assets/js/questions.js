@@ -208,7 +208,7 @@ var quizQuestions = [
         answers: [
           { text: "Fly in it", isCorrect: false },
           { text: "Pedal it", isCorrect: false },
-          { text: "sail in it", isCorrect: true },
+          { text: "Sail in it", isCorrect: true },
         ],
     },
 
