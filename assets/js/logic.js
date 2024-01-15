@@ -9,6 +9,7 @@ var questionsElement = document.querySelector("#questions");
 var questionTitleElement = document.querySelector("#question-title");
 var choicesElement = document.querySelector("#choices");
 var endScreen = document.querySelector("#end-screen");
+var finalScore = document.querySelector("#final-score");
 
 
 //Insert pub quiz image under start button, inside the start-screen div
@@ -85,6 +86,8 @@ var selectedQuestion = "";
 var randomQuestion = "";
 var choicesList;
 var answer = "";
+var addPoints = 0;
+var subtractPoints = 0;
 
 //1. When I click the start button (ADD EVENT LISTENER -CLICK), I want the timer to start (SET TIMER FUNCTION) and the first question to appear (PROMPT/DISPLAY????)
 
@@ -155,11 +158,15 @@ function nextQuestion(event) {
        var correctAudio = new Audio('./assets/sfx/correct.wav')
        correctAudio.play();
        console.log("Hello");
+       addPoints+=3;
+       console.log(addPoints);
        askFirstQuestion();
     } else {
         timerCount-=5;  //If answer wrong->display wrong and take 5 seconds off timer
         var incorrectAudio = new Audio('./assets/sfx/incorrect.wav')
         incorrectAudio.play();
+        subtractPoints-=1;
+        console.log(subtractPoints);
         alert("Wrong answer");
         askFirstQuestion();
     }
@@ -169,8 +176,10 @@ function nextQuestion(event) {
 function showScore() {
     questionsElement.style.display = "none";
     endScreen.style.display = "block";
-    //var scoreShow = ;
-    //console.log(scoreShow);
+    var showScore = addPoints + subtractPoints;
+    console.log(showScore);
+    finalScore.textContent = showScore;
+
 }
 
 
