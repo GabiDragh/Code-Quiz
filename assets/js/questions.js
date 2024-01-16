@@ -1,9 +1,8 @@
-//Define the questions variable equals to an array of objects to reference in the logic.js file.
-//Each object to contain a question property and an choices one, where each answer contains the information whether it is correct or not
+//Questions variable equals to an array of objects to reference in the logic.js file.
+//Each object contains a question property and an choices one, where each answer contains the information whether it is correct or not
 
 var quizQuestions = [
     {
-      //questionId: 1, //might not need? Adding as it might be useful for random selection of questions
       questionTitle: "In 1992, the first text message sent to a phone said what?", 
       answers: [
         { text: "Merry Christmas", isCorrect: true },
@@ -13,7 +12,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 2, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "The sound of the police siren changing pitch when it moves towards and away from you is know as what?",
         answers: [
           { text: "Doppler effect", isCorrect: true },
@@ -23,7 +21,6 @@ var quizQuestions = [
       },
 
     {
-        //questionId: 3, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "Who is the chef credited with the invention of potato crisps in 1853?", 
         answers: [
           { text: "CB Fry", isCorrect: false },
@@ -33,7 +30,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 4, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "A pet feline called Tardar Sauce became an internet sensation under what name?", 
         answers: [
           { text: "Chairman Miaow", isCorrect: false },
@@ -43,7 +39,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 5, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "Which Carribean country is regarded as the home of the steel band?", 
         answers: [
           { text: "Jamaica", isCorrect: false },
@@ -53,7 +48,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 6, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "How many legs does a lobster have?", 
         answers: [
           { text: "6", isCorrect: false },
@@ -63,7 +57,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 7, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "In which sport might you perform 'randolphs' and 'rudolphs'?", 
         answers: [
           { text: "Ice-skating", isCorrect: false },
@@ -73,7 +66,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 8, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "On a QWERTY keyboard, which of these consecutive letters are NOT placed side by side?", 
         answers: [
           { text: "ABC", isCorrect: true },
@@ -83,7 +75,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 9, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "In karaoke and karate, what does the Japanese word kara mean?", 
         answers: [
           { text: "Empty", isCorrect: true },
@@ -93,7 +84,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 10, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "Which US president has a middle initial that didn't stand for anything?", 
         answers: [
           { text: "Lyndon B Johnson", isCorrect: false },
@@ -103,7 +93,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 11, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "Which of these is a real medical condition?", 
         answers: [
           { text: "Geographic tongue", isCorrect: true },
@@ -113,7 +102,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 12, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "'Modern life is rubbish' was the second album by which band?", 
         answers: [
           { text: "Oasis", isCorrect: false },
@@ -123,7 +111,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 13, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "Which of these is a genuine language setting on Facebook?", 
         answers: [
           { text: "Double Dutch", isCorrect: false },
@@ -133,7 +120,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 14, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "If a french person says 'Je mange', what are they doing?", 
         answers: [
           { text: "Eating", isCorrect: true },
@@ -143,7 +129,6 @@ var quizQuestions = [
     },
     
     {
-        //questionId: 15, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "How long did Apollo 11 take to travel to the Moon?", 
         answers: [
           { text: "18 hours", isCorrect: false },
@@ -153,7 +138,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 16, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "Henri Becquerel won a shared Nobel Prize for accidentally discovering what?", 
         answers: [
           { text: "X-rays", isCorrect: false },
@@ -163,7 +147,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 17, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "Which of these is a Welsh slang term for a microwave oven?", 
         answers: [
           { text: "Hotty-hoo-hoo", isCorrect: false },
@@ -173,7 +156,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 18, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "'Master of the House' and 'Bring Him Home' are songs from which musical?'", 
         answers: [
           { text: "Sweeney Todd", isCorrect: false },
@@ -183,7 +165,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 19, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "Which of these world championships, held in Finland, is the oldest?", 
         answers: [
           { text: "Air guitar", isCorrect: false },
@@ -193,7 +174,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 20, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "Which of these French foods is a soup?", 
         answers: [
           { text: "Boudin noir", isCorrect: false },
@@ -203,7 +183,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 21, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "How would you travel if you were in a 'felucca'?", 
         answers: [
           { text: "Fly in it", isCorrect: false },
@@ -213,7 +192,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 22, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "What type of computer was the first laptop computer?", 
         answers: [
           { text: "Apple Macintosh", isCorrect: false },
@@ -223,7 +201,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 23, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "In March 2013, Belgium released stamps with which flavour glue?", 
         answers: [
           { text: "Beer", isCorrect: false },
@@ -233,7 +210,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 24, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "The Clarence Hotel in Ireland is co-owned by the members of which band?", 
         answers: [
           { text: "Boyzone", isCorrect: false },
@@ -243,7 +219,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 25, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "What is the sum of numbers from one to nine?", 
         answers: [
           { text: "45", isCorrect: true },
@@ -253,7 +228,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 26, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "A 'Fat Rascal' is a type of what?",
         answers: [
           { text: "Cat", isCorrect: false },
@@ -263,7 +237,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 27, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "In 'The Sound of Music', which character is described as a 'flibbertigibbet, a will-o'-the-wisp, a clown'?", 
         answers: [
           { text: "Maria", isCorrect: true },
@@ -273,7 +246,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 28, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "On the standard London Monopoly board. which of these properties has the highest value?", 
         answers: [
           { text: "Trafalgar Square", isCorrect: false },
@@ -283,7 +255,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 29, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "Which of the Beatles is barefoot on the front cover of the album 'Abbey Road'?", 
         answers: [
           { text: "George Harrison", isCorrect: false },
@@ -293,7 +264,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 30, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "Epernay in northern France calls itself the capital of which drink?", 
         answers: [
           { text: "Calvados", isCorrect: false },
@@ -303,7 +273,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 31, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "Which of these is the name of a mountain in the US state of Washington?", 
         answers: [
           { text: "Bourbon Tom", isCorrect: false },
@@ -313,7 +282,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 32, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "The two promotories at the eastern end of the Strait of Gibraltar are called the 'Pillars of ... ' what?", 
         answers: [
           { text: "Hercules", isCorrect: true },
@@ -323,7 +291,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 33, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "The tourist attraction Wookey Hole is famous for which natural features?", 
         answers: [
           { text: "Caves", isCorrect: true },
@@ -333,7 +300,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 34, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "What name is given to the area of the USA that suffered hardship as a result of drought and windstorms in the 1930s?", 
         answers: [
           { text: "Dust bowl", isCorrect: true },
@@ -343,7 +309,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 35, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "At the annual World Biscuit Throwing Championship, which type of biscuit is used?",
         answers: [
           { text: "Digestive", isCorrect: false },
@@ -353,7 +318,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 36, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "Which of these birds is NOT mentioned in the song 'The Twelve Days of Christmas'?", 
         answers: [
           { text: "Geese", isCorrect: false },
@@ -363,7 +327,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 37, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "What type of geographical feature is a 'gulch'?", 
         answers: [
           { text: "Deep ravine", isCorrect: true },
@@ -373,7 +336,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 38, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "What is the meaning of 'Hakuna Matata'?", 
         answers: [
           { text: "No worries", isCorrect: true },
@@ -383,7 +345,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 39, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "Which instrument is nicknamed 'the clown of the orchestra'?", 
         answers: [
           { text: "Bassoon", isCorrect: true },
@@ -393,7 +354,6 @@ var quizQuestions = [
     },
 
     {
-        //questionId: 40, //might not need? Adding as it might be useful for random selection of questions
         questionTitle: "Equipment for which activity is stored in a tack room?", 
         answers: [
           { text: "Rowing", isCorrect: false },
@@ -404,7 +364,7 @@ var quizQuestions = [
 ]
 
 
-//check if question numbers is unique (console.log question.Id the same?)
+//Check if question numbers is unique
 
 var questionIds = quizQuestions.map(question => question.questionId);
 var uniqueQuestionIds = new Set(questionIds);
@@ -415,7 +375,7 @@ if (questionIds.length === uniqueQuestionIds.size) {
   console.log("There are duplicate questionIds.");
 }
 
-//check text string duplicates
+//Check text string duplicates
 
 var questionTitles = quizQuestions.map(question => question.questionTitle);
 var uniquequestionTitles = new Set(questionTitles);
@@ -429,53 +389,5 @@ if (questionTitles.length === uniquequestionTitles.size) {
   console.log("There are duplicate question texts.");
 }
 
-//TODO:check if each question has one true and 2 false choices
 
- var trueCount = 0;
- var falseCount = 0; 
-
-  function checkTrueFalse () {
-
-//   for (var i = 0; i < questions.lenght; i++) {
-//      console.log(questions[i].length);
-//   }
-
-   for (var j = 0; j < quizQuestions[0].answers[1].length; j++) {
-      if (quizQuestions[i].answers[1][j].isCorrect === true) {
-          trueCount++;
-      } else {
-          falseCount++
-      }
- 
-   if (trueCount === 1 && falseCount === 2) {
-      console.log("Question " + quizQuestions[i].questionId + " has one true and two false answer inputs");
-   } else {
-      console.log("Question " + quizQuestions[i].questionId + " does NOT have one true and two false answer inputs");
-   }
-  }
- }
-checkTrueFalse();
-
-//  var trueCount = true;
-//  var falseCount = true;
-
-//  function checkchoices(questions) {
-//      for (var i = 0; i < questions.length; i++) {
-//          var questionLength = questions[i];
-//     for (var j = 0; j < questionLength.choices[1].lenght; j++) {
-//         var trueCount = questionLength.choices[1][j].filter(choices => true.isCorrect).length;
-//         var falseCount = questionLength.choices[1][j].filter(choices => false.isCorrect).length;
-//     }
-// //console.log(trueCount);
-// //console.log(falseCount);
-
-//      if (trueCount === 1 && falseCount === 2) {
-//          console.log(true);
-//      } else {
-//          console.log(false);
-//      }
-//      }
-//  }
-
-// checkchoices(questions);
 
