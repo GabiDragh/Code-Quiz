@@ -29,6 +29,7 @@ startScreen.appendChild(image);
 body.setAttribute("style", "font-family: emoji");
 startButton.setAttribute("style", "background-color: navy; color: orange; size: 110%");
 questionTitleElement.setAttribute("style", "text-align: center");
+submitButton.setAttribute("style", "background-color: navy; color: orange; size: 110%");
 
 //Create answers ordered list
 
@@ -150,7 +151,7 @@ function askFirstQuestion() {
             nextQuestion(event);
         }
         buttonEl.setAttribute("data-isCorrect", randomQuestion.answers[i].isCorrect);
-        buttonEl.setAttribute("style", "display: flex");
+        buttonEl.setAttribute("style", "background-color: navy; color: orange; size: 110%");
         choicesList.appendChild(buttonEl);
     }
      //Display ordered list
@@ -213,11 +214,16 @@ function initialsSubmit () {
 
 
 startButton.addEventListener("click", startGame);
-submitButton.addEventListener("click", initialsSubmit);
+submitButton.addEventListener("click", function(event){
+    event.preventDefault();
+    initialsSubmit();
+    renderScores();
+})
+
 
 //Each question has a clickable button (ADD EVENT LISTENER-CLICK ON VARIABLE PROPERTY)
 //When the answer in selected, next question appears (BONUS: select a random question once pressed next question?)
 //In case of an incorrect answer, 5 seconds get subtracted from the remaining time
-//Quiz ends when it runs out of questions or the time finishes
-//When the game is finished, the user sees the score and has the option to save his initals and the score (highscores.html file - store highscores highest to lowest + use localstorage set in index and get in highscores)
+//Quiz ends the time finishes
+//When the game is finished, the user sees the score and has the option to save its initals and the score (highscores.html file - store highscores highest to lowest + use localstorage set in index and get in highscores)
 
