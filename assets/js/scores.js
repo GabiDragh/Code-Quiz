@@ -1,11 +1,15 @@
-
+//Target HTML elements used in this js file
 var highscores = document.querySelector("#highscores");
+var clearButton = document.querySelector('#clear');
 
-   
+var li;
+var initialsText;
+
 renderScores();
 
-function renderScores () {
-//get info from local storage and display scores
+function renderScores () {//function from logic.js that gets executed when the submit button is pressed
+
+    //get the information from local storage and display scores
     var lastScore = localStorage.getItem("finalScore");
          console.log(lastScore);
     var lastInitials = JSON.parse(localStorage.getItem("initials"));
@@ -13,18 +17,21 @@ function renderScores () {
 
     var initialsText;
     var initialsText = lastInitials + " - " + lastScore;
-    console.log(initialsText);
-    //Show a new highscores list item for each score submitted
-    // for (var i = 0; i < initialsText.length; i++) {
-    //     var initialsListItem = initialsText[i];
+         console.log(initialsText);
 
-        var li = document.createElement("li");
-        li.textContent = initialsText;
-        highscores.appendChild(li);
-    // }
-    // highscores.push(initialsText);
+    //Show a new highscores list item for each score submitted
+
+        var li = document.createElement("li"); //create list element
+        li.textContent = initialsText; //add content to the list element from the inititalsText variable
+        highscores.appendChild(li); //append it to the list (highscores)
+
+   
 
 }
 
-//sort them highest to lowest
-//when go back button is pressed, it returns to the quiz. When clear scores button is pressed, all scores are erased from the list (clear data?)
+clearButton.addEventListener('click', function() { //function to clear scores - needs fixing
+
+   highscores.value = "";
+})
+
+
