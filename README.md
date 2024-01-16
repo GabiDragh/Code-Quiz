@@ -32,6 +32,9 @@ Display message function code (lines 114-117) copied from the Bootcamp solved St
 
 ## Links for application
 
+Link to the deployed application https://gabidragh.github.io/Code-Quiz/
+
 Screenshot of the application 
 ![Application Screenshot](screencapture-file-C-Users-dragh-Bootcamp-Code-quiz-index-html-2024-01-16-23_29_33.png?raw=true "Application Screenshot")
+
 
